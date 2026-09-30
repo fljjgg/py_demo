@@ -1,0 +1,10 @@
+boundary_cases:
+  - post_id: 1
+    expected_status: 200
+    description: "正常ID"
+  - post_id: 9999
+    expected_status: 404
+    description: "超大ID"
+  - post_id: 0
+    expected_status: 404
+    description: "边界0"
